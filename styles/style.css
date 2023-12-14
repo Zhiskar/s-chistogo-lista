@@ -29,20 +29,18 @@ blockquote {
 .content-section_theme_dark {
   background-color: #131313;
   color: #f5f5f5;
-  width: 360px;
 }
 
 .content-section_theme_bright {
   background-color: #fee42a;
   color: var(--black-bg, #131313);
-  width: 360px;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 24px 20px;
-}
+  padding: 20px 20px 16px 20px;
+  }
 
 .header__menu-list {
   display: flex;
@@ -52,15 +50,17 @@ blockquote {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 19.2px; /* 120% */
-}
-
-.header__menu-item_active {
-  text-decoration-line: none;
+  list-style: none;
 }
 
 .header__menu-item {
   text-decoration-line: underline;
+  color: #f5f5f5;
+}
+
+.header__menu-item_active {
+  text-decoration-line: none;
+  color: #f5f5f5;
 }
 
 .header__logo {
@@ -70,7 +70,8 @@ blockquote {
 }
 
 .cover {
-  background-image: url(/images/cover.svg);
+  background-image: url(../images/cover.svg);
+/*Путь переписал. Получилось*/
   background-size: 95% auto;
   background-repeat: no-repeat;
   background-position: right;
@@ -97,6 +98,7 @@ blockquote {
 
 .text-center {
   text-align: center;
+  /*padding-right: 100%;*/
 }
 
 .text-right {
@@ -191,27 +193,28 @@ blockquote {
 
 .card {
   list-style: none;
-}
-
-.card_theme_dark {
   border-radius: 30px;
-  background: var(--gray-bg, #343434);
   padding: 20px;
   margin-bottom: 32px;
+}
+/*задал правила border-radius padding margin-bottom в .card*/
+
+.card_theme_dark {
+  background: var(--gray-bg, #343434);
   color: #f5f5f5;
 }
 
 .card_theme_bright {
-  border-radius: 30px;
   background: var(--yellow-bg, #fee42a);
-  padding: 20px;
-  margin-bottom: 32px;
   color: #131313;
 }
 
 .card__author-foto {
-  border-radius: 50px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
 }
+/*радиус вместо абсолютных значений указан в %, прописаны размеры элементов*/
 
 .card__author-name {
   padding-top: 8px;
@@ -255,6 +258,28 @@ blockquote {
   font-style: normal;
   font-weight: 400;
   line-height: 135%; /* 21.6px */
+}
+
+.footer__links {
+  display: flex;
+  list-style: none;
+  column-gap: 16px;
+  color: #F5F5F5;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%; /* 17.5px */
+}
+
+.footer__links-social-networks {
+  text-decoration: none;
+  color: #F5F5F5;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%; /* 17.5px */
 }
 
 .footer__links {
