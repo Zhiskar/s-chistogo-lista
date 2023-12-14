@@ -281,9 +281,3 @@ blockquote {
   font-weight: 400;
   line-height: 125%; /* 17.5px */
 }
-
-.footer__links {
-  display: flex;
-  list-style: none;
-  column-gap: 16px;
-}
