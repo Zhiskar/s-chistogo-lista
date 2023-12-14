@@ -17,9 +17,15 @@
       </a>
       <nav class="header__menu">
         <ul class="header__menu-list">
-          <li class="header__menu-item_active">Главная</li>
-          <li class="header__menu-item">О нас</li>
-          <li class="header__menu-item">Контакты</li>
+          <li class="header__menu-item header__menu-item_active">
+            <a href="#0" class="header__menu-item_active">Главная</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#0" class="header__menu-item">О нас</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#0" class="header__menu-item">Контакты</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -31,7 +37,7 @@
           <span class="accent-span text-right">листа</span>
         </h1>
       </section>
-      <section class="content-section content-section_theme_dark intro">
+      <article class="content-section content-section_theme_dark intro">
         <header class="intro__heading">
           <p class="intro__title">8 способов борьбы со страхом чистого листа</p>
           <time class="intro__date" datetime="2022-06-05">05.06.2022 г.</time>
@@ -49,8 +55,8 @@
           Прокрастинировать перед тем, как начать что-то делать (особенно что-то
           новое) — нормальная реакция мозга. Разберёмся, почему это происходит.
         </p>
-      </section>
-      <section class="content-section content-section_theme_bright reasons">
+      </article>
+      <article class="content-section content-section_theme_bright reasons">
         <h2 class="content-section__subtitle">
           <span class="accent-span text-right">Почему чистый лист</span>
           <span class="accent-span text-left">- такой страшный?</span>
@@ -95,7 +101,7 @@
             глупость, и вообще всё, что вы сделаете, — будет неправильно.
           </li>
         </ul>
-      </section>
+      </article>
       <section class="content-section content-section_theme_dark how-to">
         <h2 class="content-section__subtitle">
           <span class="accent-span text-right">Как всё-таки начать</span>
@@ -107,7 +113,7 @@
         </p>
         <ul class="cards-list">
           <li class="card card_theme_dark">
-            <section class="card__author">
+            <div class="card__author">
               <img
                 class="card__author-foto"
                 src="./images/polyarinov.png"
@@ -116,8 +122,8 @@
                 alt="Фотография Алексея Поляринова"
               />
               <p class="card__author-name">Алексей Поляринов</p>
-            </section>
-            <section class="card__content">
+            </div>
+            <div class="card__content">
               <h3 class="card__title">Начать любыми словами</h3>
               <p class="card__text">
                 Любыми — без шуток. Если не верите нам, посмотрите, например,
@@ -127,10 +133,10 @@
                 своеобразная ловушка для мозга: он видит, что вы уже начали
                 что-то делать, и ему становится легче войти в состояние потока.
               </p>
-            </section>
+            </div>
           </li>
           <li class="card card_theme_bright card_text-only">
-            <section class="card__content">
+            <div class="card__content">
               <h3 class="card__title">
                 Поставить перед собой рамку для фотографии
               </h3>
@@ -142,10 +148,10 @@
                 том, чтобы заполнить только пространство 10х15 сантиметров. Что
                 дальше — пока неважно.
               </p>
-            </section>
+            </div>
           </li>
           <li class="card card_theme_dark">
-            <section class="card__author">
+            <div class="card__author">
               <img
                 class="card__author-foto"
                 src="./images/bunin.png"
@@ -154,8 +160,8 @@
                 alt="Фотография Ивана Бунина"
               />
               <p class="card__author-name">Иван Бунин</p>
-            </section>
-            <section class="card__content">
+            </div>
+            <div class="card__content">
               <h3 class="card__title">Сдалать из задачи рутину</h3>
               <p class="card__text">
                 <q>Писать стихи нужно каждый день, подобно тому как скрипач или
@@ -167,17 +173,21 @@
                   то пишите просто обо всём, что увидите</q>, — такой совет своему приятелю дал Иван Бунин. Нет повода ему не
                 следовать.
               </p>
-            </section>
+            </div>
           </li>
         </ul>
       </section>
     </main>
     <footer class="content-section content-section_theme_dark footer">
-      <div class="footer__copy">© VЁRSTKA</div>
+      <p class="footer__copy">© VЁRSTKA</p>
       <nav>
         <ul class="footer__links">
-          <li>VK</li>
-          <li>Ютуб</li>
+          <li>
+            <a class="footer__links-social-networks" href="https://vk.ru">VK</a>
+          </li>
+          <li>
+            <a class="footer__links-social-networks" href="https://www.youtube.com/">Ютуб</a>
+          </li>
         </ul>
       </nav>
     </footer>
